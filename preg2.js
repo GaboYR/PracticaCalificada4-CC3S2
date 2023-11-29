@@ -8,11 +8,16 @@ class Pokemon{
         this.tipo = "";
     }
     fight(){
-        throw new Error("No se especifica movimiento")
+        if (this.movimiento == ""){
+            console.log("No se especifica movimiento")
+        }
+        else {
+            console.log("flying")
+        }
     }
     canFly(){
         if(!this.tipo){
-            throw new Error("Tipo no especificado")
+            console.log("Tipo no especificado")
         }
         else return this.tipo.includes("flying")
     }
@@ -33,3 +38,11 @@ class Charizard extends Pokemon{
         else throw new Error("Movimiento no especificado")
     }
 }
+
+p = new Pokemon(10,10,10)
+p.fight()
+p.canFly()
+p.tipo = "flying"
+p.movimiento = "Air"
+p.fight()
+p.canFly()
