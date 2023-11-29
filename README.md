@@ -43,6 +43,10 @@ class Charizard extends Pokemon{
     }
 }
 ```
+
+Ejemplos:
+
+![](https://github.com/GaboYR/PracticaCalificada4-CC3S2/blob/main/images/pokemon.png)
 ## Parte 3(principio de inversion)
 
 Tenemos el siguiente fragmento de codigo:
